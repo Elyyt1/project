@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAVID GOGGINS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+        body {  
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+            display: grid;
+            height: 100vh; /* Занимает всю высоту экрана */
+            grid-template-rows: 1fr; /* 1 строка */
+            grid-template-columns: 1fr 1fr; /* Две колонки: текст слева, пустое место справа */
+            background-image : url('https://hustlersinventory.com/cdn/shop/articles/d09e286721fb27474518fea09536f056.jpg?v=1683401850')  ; /* Замените на путь к вашему изображению */
+            background-size: cover;
+            background-position: center;
+           
+            
+            color: white;
+            
+        }
+        
+        .navbar {
+            grid-column: span 2; /* Навбар должен занимать всю ширину */
+            display: flex;
+            justify-content: space-between; /* Распределяем элементы по краям */
+            align-items: center;
+            padding: 10px 20px; /* Внутренние отступы */
+            background-color: white;
+            border-bottom: 1px solid #ccc; /* Нижняя граница */
+            height: 50px ;
+            
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: black ;
+            margin-right: 20px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px; /* Расстояние между ссылками */
+            
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            
+            font-size: 14px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #5a93cc; /* Цвет при наведении */
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .social-icons a {
+            text-decoration:     none;
+        }
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .text-block {
+            grid-column: 2; /* Помещает текст в левую колонку */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Центровка по вертикали */
+            padding: 50px; /* Отступ от краев */
+            /* background: rgba(255, 255, 255, 0.7); Полупрозрачный фон */
+            color: black; /* Цвет текста */
+            height: 100vh;   /* пипец я тупой оказывается, столько времени просрал чтобы просто поставить height */
+            background-repeat: no-repeat;
+        }
+        h1 {
+            font-size: 70px;
+            color: #5a93cc;
+            margin: 0;
+        }
+        h2 {
+            font-size: 70px;
+            color: black;
+            margin:      0;
+        }
+        p {
+            font-size: 16px;
+            color: gray;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px; 
+            margin: 0 10    px 10px 0;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 1px solid black;
+            color: black;
+            text-decoration: none;
+            font-size: 32px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #5a93cc;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+         <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">DAVID GOGGINS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://davidgoggins.com/about/">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://davidgoggins.com/book/">BOOKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://davidgoggins.com/in-the-media/">PRESS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://davidgoggins.com/athletic-achievements/">ACHIEVEMENTS</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://shop.davidgoggins.com/">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.gogginschallenge.com/">4X4X48</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+     <!-- Контент -->
+     <div class="text-block">
+        <h1>NEVER FINISHED:</h1>
+        <h2>UNSHACKLE YOUR MIND AND WIN THE WAR WITHIN</h2>
+        <p>This is not a self help book. It’s a wake up call! Available now.</p>
+        <div class="buttons">
+            <a href="https://davidgoggins.com/book/" class="button">ABOUT THE BOOK</a>
+            <a href="https://davidgoggins.com/about/" class="button">ABOUT DAVID</a>
+        </div>
+    </div>
+
+  
+
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          color: #fff;
+          height: 100vh;
+        }
+    
+        .image-container {
+          position: relative;
+          height: 100vh; /* Высота блока на весь экран */
+          width: 200%; /* Ширина на весь экран */
+          overflow: hidden; /* Обрезка лишнего контента */
+          height: 100vh;
+        }
+    
+        .image-container img {
+          width: 100%;
+          height: 100%;
+          object-fit:cover; /* Заполнение блока изображением */
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+    
+        .text-overlay {
+          position: absolute;
+          top: 50%;
+          left: 5%;
+          transform: translateY(-50%);
+          color: #56aaff;
+          max-width: 500px;
+          z-index: 10; /* Текст поверх изображения */
+        }
+    
+        .text-overlay h1 {
+          font-size: 3rem;
+          margin: 0 0 20px 0;
+        }
+    
+        .text-overlay p {
+          line-height: 1.6;
+          margin: 0;
+          color: #fff;
+        }
+      </style>
+    </head>
+    
+
+    
+
+
+
+        
+      <!-- Блок с изображением и текстом -->
+      <div class="image-container">
+        <img src="https://davidgoggins.com/wp-content/uploads/2022/02/For-pure-inspiration-page.jpg" alt="David Goggins">
+        <div class="text-overlay">
+          <h1>PURE <br> INSPIRATION</h1>
+          <p>
+            David brings his inspirational story to every engagement with his passionate and empowering presence. He electrifies audiences both large and small, from corporate engagements where he speaks to hundreds of executives or thousands of salespeople to intimate settings with a select group of VIP clients.
+          </p>
+        </div>
+      </div>
+      
+ <!--белая полоса-->
+ 
+ <style>
+   /* Основные стили */
+   
+.home_features {
+  text-align: center;
+  padding: 20px 0; /* Уменьшаем отступы для компактности */
+  margin: 0; /* Убираем внешние отступы */
+  background: url('https://fonetastik.com/wp-content/uploads/2024/02/belyi-fon-bez-nichego-60.webp') no-repeat center center;
+  background-size: cover;
+  color: #000000; /* Текст на фоне */
+  width: 200%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto; /* Центрируем блок */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для визуального отделения */
+} 
+
+.home_features h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.home_features_list {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Горизонтальное выравнивание */
+  justify-content: space-around; /* Распределяем элементы равномерно */
+  gap: 10px; /* Расстояние между элементами */
+  margin: 1; /* Убираем внешние отступы */
+}
+
+.home_features_list li {
+  flex: 1; /* Растягиваем элементы равномерно */
+  max-width: 150px; /* Ограничиваем максимальную ширину элементов */
+  text-align: center; /* Центрируем текст внутри элемента */
+}
+
+.home_features_list img {
+  width: 100%; /* Изображения подстраиваются под размер блока */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Центрируем изображение внутри элемента */
+  transition: transform 0.3s;
+}
+
+.home_features_list img:hover {
+  transform: scale(1.1);
+}
+
+  </style>
+</head>
+<body>
+  
+
+    <div class="home_features">
+    <div class="container">
+      <h3>AS FEATURED ON:</h3>
+      <ul class="home_features_list">
+        <li>
+          <a href="https://www.runnersworld.com/runners-stories/a20798013/rw-hero-of-running-david-goggins/" target="_blank">
+            <img src="https://davidgoggins.com/wp-content/uploads/2016/11/home_features_logo1-157x106.jpg" alt="Runner's World">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=9iVh87XtL_4&feature=youtu.be" target="_blank">
+            <img src="https://davidgoggins.com/wp-content/uploads/2018/09/CBS_MorningLogo-146x106.jpg" alt="CBS This Morning">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.huffingtonpost.com/2012/10/02/david-goggins-pull-up-record_n_1930723.html" target="_blank">
+            <img src="https://davidgoggins.com/wp-content/uploads/2016/11/home_features_logo3.jpg" alt="The Huffington Post">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.outsideonline.com/1871981/fittest-real-athletes-150-alan-horton" target="_blank">
+            <img src="https://davidgoggins.com/wp-content/uploads/2016/11/home_features_logo4-177x106.jpg" alt="Outside">
+          </a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+  
+      <!--жопа тут начаа-->
+      <div class="home_features">
+        <div class="container">
+          <h3>AS FEATURED ON:</h3>
+          <ul class="home_features_list">
+            <li>
+              <a href="https://www.runnersworld.com/runners-stories/a20798013/rw-hero-of-running-david-goggins/" target="_blank">
+                <img src="https://davidgoggins.com/wp-content/uploads/2016/11/home_features_logo1-157x106.jpg" alt="Runner's World">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=9iVh87XtL_4&feature=youtu.be" target="_blank">
+                <img src="https://davidgoggins.com/wp-content/uploads/2018/09/CBS_MorningLogo-146x106.jpg" alt="CBS This Morning">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.huffingtonpost.com/2012/10/02/david-goggins-pull-up-record_n_1930723.html" target="_blank">
+                <img src="https://davidgoggins.com/wp-content/uploads/2016/11/home_features_logo3.jpg" alt="The Huffington Post">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.outsideonline.com/1871981/fittest-real-athletes-150-alan-horton" target="_blank">
+                <img src="https://davidgoggins.com/wp-content/uploads/2016/11/home_features_logo4-177x106.jpg" alt="Outside">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      
+
+
+
+      <!--не убирать нужен чтобы код жид!!!-->
+      <div class="text-block">
+      
+        <div class="buttons">
+      
+        </div>
+    </div>
+    <!--не убирать нужен чтобы код жид!!!-->
+
+  
+
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          color: #fff;
+        }
+    
+        .image-container {
+          position: relative;
+          height: 120vh; /* Высота блока на весь экран */
+          width: 200%; /* Ширина на весь экран */
+          overflow: hidden; /* Обрезка лишнего контента */
+        }
+    
+        .image-container img {
+          width: 100%;
+          height: 100%;
+          object-fit:cover; /* Заполнение блока изображением */
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+    
+        .text-overlay {
+          position: absolute;
+          top: 50%;
+          left: 5%;
+          transform: translateY(-50%);
+          color: #56aaff;
+          max-width: 500px;
+          z-index: 10; /* Текст поверх изображения */
+        }
+    
+        .text-overlay h1 {
+          font-size: 3rem;
+          margin: 0 0 20px 0;
+        }
+    
+        .text-overlay p {
+          line-height: 1.6;
+          margin: 0;
+          color: #fff;
+        }
+      </style>
+    </head>
+    
+
+        
+      <!-- Блок с изображением и текстом -->
+      <div class="image-container">
+        <img src="https://wallpaperaccess.com/full/6278189.jpg" alt="Daid Goggins">
+        <div class="text-overlay">
+          <h1>ATHLETIC <br> ACHIEVEMENTS</h1>
+          <p>
+            David Goggins is considered by many to be among the world’s best ultra-endurance athletes. He has competed in more than 70 endurance races, has placed 3rd at the Badwater 135 Death Valley- considered the world’s toughest foot race, and regularly placing in the top five in other ultramarathons. He also held the Guinness World Record for the most pull-ups done in 24 hours completing 4,030 in 17 hours.
+          </p>
+          <p><a class="button" href="https://davidgoggins.com/athletic-achievements/">LEARN MORE</a></p>
+        </div>
+      </div>
+
+
+
+      
+<!-- цитата -->
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .quote_bar {
+    background-color: #fff; /* Белый фон для блока */
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для объема */
+    height: 15%;
+    width: 200%; /* Блок теперь будет заполнять всю доступную ширину */
+    text-align: center; /* Центрирование текста */
+    margin: 0; /* Убираем внешние отступы */
+    position: relative; /* Относительное позиционирование */
+    z-index: 1; /* Обеспечиваем, чтобы цитата была поверх других элементов */
+  }
+
+  .quote_bar blockquote {
+    font-style: italic; /* Курсив для цитаты */
+    margin: 0; /* Убираем внешние отступы */
+    font-size: 1.5em; /* Увеличиваем размер шрифта */
+  }
+
+  .quote_bar cite {
+    display: block; /* Перенос подписи на новую строку */
+    margin-top: 10px; /* Отступ сверху для подписи */
+    font-style: normal; /* Убираем курсив для подписи */
+    color: #555; /* Темно-серый цвет подписи */
+  }
+
+  .container-flusid {
+   
+    height: 1vh; /* Высота фона */
+    width: 100vh; /* Ширина на 100% */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+</head>
+<body>
+<!-- Фоновый блок -->
+<div class="container-fluid"></div>
+
+<!-- Цитата на всю ширину -->
+<div class="quote_bar">
+  <blockquote>
+    <p>In my pursuit to understand and learn from the greatest competitors in the world, <strong>David Goggins</strong> is one that sets the standard.</p>
+    <cite><strong>— Pete Carroll,</strong> Seattle Seahawks Head Coach</cite>
+  </blockquote>
+</div>
+
+
+
+
+  <!-- social media -->
+
+
+
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+
+  .image-container {
+    position: relative;
+    height: 120vh; /* Высота блока на весь экран */
+    width: 200%; /* Ширина на весь экран */
+    overflow: hidden; /* Обрезка лишнего контента */
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover; /* Заполнение блока изображением */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #56aaff;
+    max-width: 500px;
+    z-index: 10; /* Текст поверх изображения */
+  }
+
+  .text-overlay h1 {
+    font-size: 3rem;
+    margin: 0 0 20px 0;
+    
+  }
+
+  .text-overlay p {
+    line-height: 1.6;
+    margin: 0;
+    color: #fff;
+  }
+</style>
+</head>
+>
+<div class="row">
+  <div class="col-md-12"></div>
+  <div class="col-md-12">
+
+
+
+  
+<!-- Блок с изображением и текстом -->
+<div class="image-container">
+  <img src="https://wallpapers.com/images/hd/david-goggins-resting-e11ibealqmy7ckwh.jpg" alt="Davvid Goggins">
+  <div class="text-overlay">
+    <h1>SOCIAL <br> MEDIA</h1>
+    <p>
+      Follow David Goggins for weekly inspirational posts and updates on events and appearances.
+    </p>
+    <p><a class="button" href="https://davidgoggins.com/athletic-aSchievements/">Follow David on instagram </a></p>
+     <p><a class="button" href="https://www.facebook.com/iamdavidgoggins">Follow David on Facebook </a></p>
+     <p><a class="button" href="https://twitter.com/davidgoggins   ">   Follow David on Twitter</a></p>
+  </div>
+</div>
+
+      
+<footer style="background-color: #333; color: #fff; padding: 20px 0; text-align: center; width: 200%;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+      <!-- Навигация в футере -->
+      <nav style="margin-bottom: 10px;">
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 15px;">
+              <li><a href="https://davidgoggins.com/about/" style="color: #fff; text-decoration: none;">ABOUT</a></li>
+              <li><a href="https://davidgoggins.com/book/" style="color: #fff; text-decoration: none;">Books</a></li>
+              <li><a href="https://davidgoggins.com/in-the-media/" style="color: #fff; text-decoration: none;">PRESS</a></li>
+              <li><a href="https://davidgoggins.com/athletic-achievements/" style="color: #fff; text-decoration: none;">ACHIEVEMENTS</a></li>
+              <li><a href="https://shop.davidgoggins.com/" style="color: #fff; text-decoration: none;">Shop</a></li>
+              <li><a href="https://www.gogginschallenge.com/" style="color: #fff; text-decoration: none;">4X4X48</a></li>
+          </ul>
+      </nav>
+      <!-- Копирайт и ссылки на политику -->
+      <p style="margin: 10px 0;">&copy; 2024 Goggins, LLC. All Rights Reserved.</p>
+      <p style="margin: 10px 0;">
+          <a href="#privacy-policy" style="color: #5f82a9; text-decoration: none;">Privacy Policy</a> |
+          <a href="#terms-and-conditions" style="color: #5f82a9; text-decoration: none;">Terms and Conditions</a> |
+          <a href="#accessibility-statement" style="color: #5f82a9; text-decoration: none;">Accessibility Statement</a>
+      </p>
+  </div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
